@@ -1,0 +1,51 @@
+h1 {
+
+    color: blue;
+}
+
+h3 {
+    background-color: aliceblue;
+}
+
+h4 {
+    color: magenta;
+}
+
+p {
+    color: pink;
+}
+
+li {
+    color: pink;
+}
+
+#itslife {
+    background-color: purple;
+    color: black
+}
+
+.inclass {
+    background-color: black;
+    color: gray;
+}
+
+.itsaspan {
+    color: black;
+    background-color: red;
+}
+
+#itsadiv {
+    color: yellowgreen
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
