@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* Set background color to black */
+}
+
+h1 {
+    text-align: center;
+}
+
+#wrapper {
+    margin: 1em auto;
+    padding: 0;
+    max-width: 960px;
+    /* Set max-width to 960px */
+    border: 1px solid gray;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    grid-column: span 12;
+    background-color: gray;
+}
+
+nav {
+    grid-column: span 3;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    width: 200px;
+}
+
+nav li a {
+    display: block;
+    background-color: purple;
+    border: 1px solid black;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    grid-column: span 6;
+}
+
+main img {
+    width: 100%;
+    /* Adjust image width to fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Prevent images from floating */
+    margin-bottom: 20px;
+    /* Add some spacing between images */
+}
+
+.slideshow-container {
+    grid-column: span 6;
+    /* Set the slideshow container to span 6 columns */
+}
+
+.slideshow-container img {
+    width: 100%;
+    /* Adjust image width to fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Prevent images from floating */
+    margin-bottom: 20px;
+    /* Add some spacing between images */
+}
+
+aside {
+    grid-column: span 3;
+}
+
+footer {
+    background-color: gray;
+    grid-column: span 12;
+}
+
+
+
+
+#myCarousel .f-carousel__slide {
+    text-align: center;
+    padding: 24px;
+    background: #eee;
+}
+
+#wrappers img {
+    width: 150px;
+    height: auto;
+}
+
+#wrappers img {
+    width: 150px;
+    height: auto;
+    transform: skewX(-20deg);
+    margin: 20px;
+}

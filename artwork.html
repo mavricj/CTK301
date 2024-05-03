@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Artwork</title>
+    <link href="artwork.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Artwork</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="">Artwork</a></li>
+            </ul>
+        </nav>
+
+        <div id="wrappers">
+            <h1>Slideshow</h1>
+            <a href="IMG_1730.jpg" data-fancybox="gallery" data-caption="Greed City">
+                <img src="IMG_1730.jpg" alt="Greed City">
+            </a>
+            <a href="IMG_1732.jpg" data-fancybox="gallery" data-caption="Galaxy Disco">
+                <img src="IMG_1732.jpg" alt="Galaxy Disco">
+            </a>
+            <a href="IMG_1733.jpg" data-fancybox="gallery" data-caption="Uncomfortable Art">
+                <img src="IMG_1733.jpg" alt="Uncomfortable Art">
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <img src="IMG_1730.jpg" alt="Greed City">
+        <img src="IMG_1732.jpg" alt="Galaxy Disco">
+        <img src="IMG_1733.jpg" alt="Uncomfortable Art">
+    </div>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+        const container = document.getElementById("myCarousel");
+        const options = { infinite: false };
+        new Carousel(container, options);
+    </script>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var slides = document.querySelectorAll('.slideshow-container img');
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body>
+
+</html>
