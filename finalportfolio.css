@@ -1,68 +1,90 @@
 body {
-    background-color: black;
-}
-
-h1 {
-    text-align: center;
-}
-
-#wrapper h1 {
-    text-align: center;
-}
-
-#wrapper {
-    margin: 1em auto;
-    padding: 0;
-    width: 960px;
-    border: 1px solid gray;
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
 }
 
 header {
-    grid-column: span 12;
-    background-color: gray;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 nav {
-    grid-column: span 3;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav li {
-    width: 200px;
+nav ul li {
+    padding: 14px 20px;
 }
 
-nav li a {
-    display: block;
-    background-color: purple;
-    border: 1px solid black;
-    padding: 1em;
-    color: black;
+nav ul li a {
     text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
 }
 
 main {
-    grid-column: span 6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 main img {
-    width: 200px;
-    float: left;
-    padding-right: 24px;
+    max-width: 300px;
+    /* Adjust this value for smaller images */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    /* Ensures images align properly with text */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for a polished look */
 }
 
-aside {
-    grid-column: span 3;
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
 }
 
 footer {
-    background-color: gray;
-    grid-column: span 12;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
